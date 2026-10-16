@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autolus Buying Assistant Case Study | Arafat Mughal</title>
+  <meta name="description" content="How Arafat Mughal delivered a conversational procurement workflow that turns a buying request into a routed, costed purchase order draft.">
+  <link rel="canonical" href="https://arfat-mughal.github.io/cases/autolus-buying-assistant.html">
+  <meta property="og:title" content="Autolus Buying Assistant | Case Study">
+  <meta property="og:description" content="A conversational procurement workflow from purchase request to approval-ready order.">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#f7f7f2] font-['DM_Sans',sans-serif] text-[#20221f] antialiased">
+  <main class="mx-auto max-w-4xl px-6 py-10 sm:py-16">
+    <a href="../index.html#autolus-buying-assistant" class="inline-flex items-center gap-2 text-sm font-semibold text-[#2e48ed] underline underline-offset-4">← Back to portfolio</a>
+    <p class="mt-12 text-xs font-semibold uppercase tracking-[.18em] text-[#2e48ed]">Case study · Enterprise AI &amp; procurement</p>
+    <h1 class="mt-4 max-w-3xl font-['Manrope',sans-serif] text-4xl font-extrabold tracking-[-.05em] sm:text-6xl">Autolus Buying Assistant</h1>
+    <p class="mt-5 max-w-2xl text-lg leading-8 text-[#3f463d]">A conversational procurement demo that takes a single buying request through classification, financial coding, routing, approval, and an automatically raised purchase order.</p>
+    <dl class="mt-10 grid gap-4 border-y border-black/10 py-6 sm:grid-cols-3"><div><dt class="text-xs uppercase tracking-wider text-[#53594f]">Categories</dt><dd class="mt-1 text-3xl font-bold">28</dd></div><div><dt class="text-xs uppercase tracking-wider text-[#53594f]">Automated flows</dt><dd class="mt-1 text-3xl font-bold">4</dd></div><div><dt class="text-xs uppercase tracking-wider text-[#53594f]">Demo tests passed</dt><dd class="mt-1 text-3xl font-bold">18/18</dd></div></dl>
+    <section class="mt-14"><h2 class="font-['Manrope',sans-serif] text-2xl font-bold">The challenge</h2><p class="mt-4 leading-8 text-[#3f463d]">A requester should be able to explain what they need in plain language, without manually navigating procurement forms, selecting financial codes, estimating costs, or understanding the approval route. The system needed to use maintained business configuration instead of hardcoded agent decisions.</p></section>
+    <section class="mt-12"><h2 class="font-['Manrope',sans-serif] text-2xl font-bold">The approach</h2><div class="mt-5 grid gap-4 sm:grid-cols-2"><article class="rounded-xl border border-black/10 bg-white p-6"><h3 class="font-semibold">Conversation and decisions</h3><p class="mt-3 text-sm leading-7 text-[#3f463d]">Copilot Studio manages the conversation and Adaptive Cards. Dataverse supplies taxonomy, departments, cost centres, GL accounts, dimensions, travel policy, approval thresholds, suppliers, catalogue data, routing rules, and the audit trail.</p></article><article class="rounded-xl border border-black/10 bg-white p-6"><h3 class="font-semibold">Workflow orchestration</h3><p class="mt-3 text-sm leading-7 text-[#3f463d]">Four Power Automate flows provide coding and rate-card estimates, resolve the buying route and supplier, create the requisition, and escalate requests with an unknown value.</p></article></div></section>
+    <section class="mt-12"><h2 class="font-['Manrope',sans-serif] text-2xl font-bold">The delivered workflow</h2><ol class="mt-5 space-y-4 border-l-2 border-[#2e48ed] pl-6"><li><strong>Describe the purchase.</strong> The requester types one sentence.</li><li><strong>Classify and code it.</strong> The assistant identifies the category, cost centre, GL account, department, approver, and estimate when no value is given.</li><li><strong>Choose the route.</strong> The system selects preferred supplier, catalogue, P-card, sourcing, or escalation and prepares draft lines.</li><li><strong>Submit and approve.</strong> The draft becomes a requisition; approval cards are delivered in Teams and the demo raises a purchase order in Dynamics 365 Finance &amp; Operations.</li></ol></section>
+    <section class="mt-12"><h2 class="font-['Manrope',sans-serif] text-2xl font-bold">Result and next steps</h2><p class="mt-4 leading-8 text-[#3f463d]">The end-to-end demo passed all 18 planned tests. The intended follow-up work is to store requisitions in Dataverse rather than a live Finance environment, deliver approvals directly to each assigned approver, use signed-in requester data, and expose the newer configuration tables in the admin app.</p></section>
+    <section class="mt-12 rounded-2xl bg-[#2e48ed] p-8 text-white"><h2 class="font-['Manrope',sans-serif] text-2xl font-bold">Technology</h2><p class="mt-4 leading-7 text-white">Microsoft Copilot Studio · GPT-4.1 · Dataverse · Power Automate · Dynamics 365 Finance &amp; Operations · Teams · Entra ID · Power Apps</p></section>
+  </main>
+</body>
+</html>

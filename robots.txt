@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arfat-mughal.github.io/sitemap.xml
